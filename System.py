@@ -10,7 +10,7 @@ path_to_data = r'C:\Users\anto3\Desktop\DAKI\miniprojekt-DUAS-main'
 classifier_path = os.path.join(path_to_data, 'RF_classifier.joblib')
 Label_encoder_path = os.path.join(path_to_data, 'label_encoder.joblib')
 Image_dir = os.path.join(path_to_data, 'Data', 'Cropped and perspective corrected boards')
-templates_path = [os.path.join(path_to_data, 'Data', 'Crowns_martin', f'{i}_DS.png') for i in range(1,4)]
+templates_path = [os.path.join(path_to_data, 'Data', 'crown_templates', f'{i}_DS.png') for i in range(1,4)]
 
 #   Key values: (0.75)
 Threshold = 0.75
