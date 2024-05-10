@@ -2,15 +2,15 @@ import os
 import cv2 as cv
 import numpy as np
 import joblib
-import xgboost as xgb
+
 
 
 #   Configuration and path setup:
-path_to_working_folder = r'C:\Users\anto3\Desktop\DAKI\miniprojekt-DUAS-main'
-classifier_path = os.path.join(path_to_working_folder, 'RF_classifier.joblib')
-Label_encoder_path = os.path.join(path_to_working_folder, 'label_encoder.joblib')
-Image_dir = os.path.join(path_to_working_folder, 'Data', 'Cropped and perspective corrected boards')
-templates_path = [os.path.join(path_to_working_folder, 'Data', 'Crowns_martin', f'{i}_DS.png') for i in range(1,4)]
+path_to_data = r'C:\Users\anto3\Desktop\DAKI\miniprojekt-DUAS-main'
+classifier_path = os.path.join(path_to_data, 'RF_classifier.joblib')
+Label_encoder_path = os.path.join(path_to_data, 'label_encoder.joblib')
+Image_dir = os.path.join(path_to_data, 'Data', 'Cropped and perspective corrected boards')
+templates_path = [os.path.join(path_to_data, 'Data', 'Crowns_martin', f'{i}_DS.png') for i in range(1,4)]
 
 #   Key values: (0.75)
 Threshold = 0.75
